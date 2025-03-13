@@ -85,7 +85,7 @@ class Reviewer(Runnable[Input, Recommendations]):
             + CODE_TEMPLATE
         )
         self.chain = typing.cast(
-            RunnableSerializable[dict[str, str], Recommendations],
+            "RunnableSerializable[dict[str, str], Recommendations]",
             self.prompt_template | DEFAULT_MODEL | parser,
         )
 
