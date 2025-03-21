@@ -61,14 +61,10 @@ repos:
     hooks:
       - id: committed
 
-  - repo: https://github.com/igorshubovych/markdownlint-cli
-    rev: v0.44.0
+  - repo: https://github.com/DavidAnson/markdownlint-cli2
+    rev: v0.17.2
     hooks:
-      - id: markdownlint
-        exclude: |
-          (?x)^(
-            src/pypacter/.*\.md
-          )
+      - id: markdownlint-cli2
 
   - repo: https://github.com/crate-ci/typos
     rev: v1.30.2
