@@ -36,10 +36,10 @@ logger = logging.getLogger(__name__)
 
 def get_version() -> str:
     """
-    Get the version of Accord API.
+    Get the version of API.
 
     Returns:
-        The version of Accord API.
+        The version of API.
     """
     return __version__
 
@@ -73,7 +73,7 @@ def local() -> None:
     machine), and uses a randomly allocated port.
 
     It is possible to override the host and port by setting the environment
-    variables `ACCORD_DEV_HOST` and `ACCORD_DEV_PORT` respectively.
+    variables `DEV_HOST` and `DEV_PORT` respectively.
     """
     import uvicorn
 
