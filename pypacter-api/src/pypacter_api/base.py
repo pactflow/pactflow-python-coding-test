@@ -13,7 +13,7 @@ from pypacter_api import get_version
 router = APIRouter()
 
 
-@router.get("/health", tags=["health"])
+@router.get("/health")
 async def health() -> JSONResponse:
     """
     Health check.
@@ -24,7 +24,7 @@ async def health() -> JSONResponse:
     return JSONResponse(content={"status": "ok"})
 
 
-@router.get("/version", tags=["version"])
+@router.get("/version")
 async def version() -> JSONResponse:
     """
     Get the version of the API.
