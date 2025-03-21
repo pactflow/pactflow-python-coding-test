@@ -9,6 +9,7 @@ We will be looking for the following aspects:
     -   Code structure
     -   Comments
     -   Documentation
+    -   Adherence to existing code
 2.  The correctness of your code; including aspects such as:
     -   Handling of edge cases
     -   Error handling
@@ -50,45 +51,12 @@ pypacter/
 
 ## Tasks
 
-The following tasks purposefully leave out some specificity to allow you to demonstrate your problem-solving skills, and give you the opportunity to make decisions about the implementation.
+In the interview, you will be asked to complete one or two tasks, depending on the time available. You will have two engineers available to help you with any questions, and you are encouraged to ask for help for any clarification, questions, or guidance. The intent is to simulate the way we work at PactFlow, where we encourage collaboration and communication.
 
-Each task should only take about 30 minutes to complete, and you should also allow 30 minutes to familiarize yourself with the codebase. If you find yourself spending more time on a task, submit what you have and document in the PR what you would have done if you had more time.
+The specific details of the tasks will be provided to you during the interview, but may include any of the following:
 
-### Task 1
+-   Adding a new functionality to the core package
+-   Adding a new endpoint to the API
+-   Extending or enhancing an existing capability
 
-#### Summary
-
-Add a new function to the core package to:
-
--   Ingest a snippet of code
--   Output the most likely programming language
-
-Ideally, this function should make use of a large language model (LLM) to detect the language, but you can use any method you prefer.
-
-#### Motivation
-
-Clients will be submitting code snippets to the API, and in order to improve the customer experience, we want to automatically detect the programming language instead of requiring the client to specify it.
-
-### Task 2
-
-#### Summary
-
-Add a new endpoint to the existing API which exposes the language detection functionality.
-
-#### Motivation
-
-This is unlikely to be useful in isolation, but we expect to use this functionality in the future to enhance other functionality.
-
-### Task 3
-
-#### Summary
-
-Integrate the language-detection ability with the existing `reviewer` functionality for code reviews
-
-#### Motivation
-
-Enhancing the `reviewer` functionality with language detection will hopefully improve the accuracy and relevance of the code reviews, providing a better experience for the users.
-
-### Task 4 (Optional)
-
-Show-case your skills by adding a new feature of your choice to the core package. Ideally, this feature should make use of an LLM.
+You are encouraged to read the existing codebase and familiarize yourself with the structure. Please make sure that you are able to run the tests before the interview to maximize the time available for the tasks during the interview.
