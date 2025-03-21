@@ -45,15 +45,33 @@ class Recommendation(BaseModel):
     Individual recommendation for the code snippet.
     """
 
-    line: int = Field(
-        description="The line number of the recommendation.",
-    )
+    line: int = Field(description="The line number of the recommendation.")
+    """
+    The line number of the recommendation.
+
+    This is the line number in the code snippet where the recommendation is
+    relevant, with the first line being line 1.
+    """
+
     severity: typing.Literal["critical", "error", "warning"] = Field(
         description="The severity of the recommendation.",
     )
+    """
+    The severity of the recommendation.
+
+    This is one of "critical", "error", or "warning".
+    """
+
     message: str = Field(
         description="The message for the recommendation.",
     )
+    """
+    The message for the recommendation.
+
+    This is a human-readable message that describes the recommendation. It may
+    also include a suggestion for how to fix the issue. This should remain
+    concise and clear.
+    """
 
 
 class Recommendations(BaseModel):
